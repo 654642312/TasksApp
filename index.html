@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--BOOTSTRAP-->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <h1>Task App</h1>
+
+       <div class="row mt-5">
+            <div class="col-5">
+                <div class="card p-5">
+                    <form id="Form">
+                        <div class="form-group">
+                            <input name="name" type="text" placeholder="Name Task" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input name="description"  type="text" class="form-control" placeholder="Description Task">
+                        </div>
+                        <button 
+                            type="submit" class="btn btn-success btn-block">Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div id="Tasks" class="col-5 ml-3">
+
+            </div>
+       </div>
+    </div>
+
+    <script src="getTasks.js"></script>
+</body>
+</html>
