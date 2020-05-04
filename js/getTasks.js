@@ -9,9 +9,7 @@ class Tasks{
         <div class="card p-5 mt-3">
             <p> Task: ${this.name}</p>
             <p> Description: ${this.description}</p>
-            <button class="btn btn-danger">
-                Delete
-            </button>
+            <button class="btn btn-danger">Delete</button>
         </div>`
         count++;
         bannerTasks()
@@ -29,4 +27,5 @@ form.addEventListener('submit', e => {
 
     const tasks = new Tasks(name, description);
     tasks.showTask();
+    messageSaveTasks();
 });

@@ -3,5 +3,6 @@ document.addEventListener('click', (e) => {
        e.target.parentElement.remove();
        count--;
        bannerTasks();
+       messageDeleteTask();
    }
 })
