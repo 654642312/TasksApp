@@ -13,22 +13,22 @@
         <div id="banner" class="bg-primary p-5 text-center">
         </div>
         <div class="container">
-            <div id="message">
-            </div>
             <div class="row mt-5">
                 <div class="col-5">
                     <div class="card p-5">
                         <form id="Form">
                             <div class="form-group">
-                                <input name="name" type="text" placeholder="Name Task" class="form-control">
+                                <input name="name" type="text" required placeholder="Name Task" class="form-control">
                             </div>
                             <div class="form-group">
-                                <input name="description"  type="text" class="form-control" placeholder="Description Task">
+                                <input name="description"  type="text" required class="form-control" placeholder="Description Task">
                             </div>
                             <button 
                                 type="submit" class="btn btn-success btn-block">Send
                             </button>
                         </form>
+                    </div>
+                    <div id="message">
                     </div>
                 </div>
                     <div id="Tasks" class="col-5 ml-3">
@@ -37,6 +37,8 @@
        </div>
 
     <script src="js/BannerTasks.js"></script>
+    <script src="js/resetForm.js"></script>
+    <script src="js/validationForm.js"></script>
     <script src="js/getTasks.js"></script>
     <script src="js/deleteTask.js"></script>
     <script src="js/showMessage.js"></script>

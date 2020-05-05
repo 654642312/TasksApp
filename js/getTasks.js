@@ -12,14 +12,15 @@ class Tasks{
             <button class="btn btn-danger">Delete</button>
         </div>`
         count++;
-        bannerTasks()
+        bannerTasks();
+        resetForm();
     }
 }
 
 let form = document.getElementById('Form');
-form.addEventListener('submit', e => {
-    e.preventDefault();
+form.addEventListener('submit', validationForm)
 
+const showTasksData = () => {
     let data = new FormData(form);
 
     name = data.get('name');
@@ -28,4 +29,4 @@ form.addEventListener('submit', e => {
     const tasks = new Tasks(name, description);
     tasks.showTask();
     messageSaveTasks();
-});
+}

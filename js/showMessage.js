@@ -17,3 +17,12 @@ const messageDeleteTask = () =>{
     `
     setTimeout(() => {message.innerHTML = ' '}, 1500);
 }
+
+const messageError = () => {
+    message.innerHTML = `
+    <div class="bg-warning p-2">
+        <p class="text-dark">complete all fields</p>
+    </div>
+    `
+    setTimeout(() => {message.innerHTML = ' '}, 1500);
+}
