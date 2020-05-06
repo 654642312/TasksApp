@@ -1,8 +1,0 @@
-aumentarle mas el tiempo de aparicion del mensaje
-y agregar un reset del formulario
-validaciones que si los campos de los inputs estan vacios
-que no cree una nueva tarea
-y que si hay un tarea con ese mismo nombre que no la agregue
-dividir las tareas por categorias
-
-
