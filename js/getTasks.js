@@ -22,12 +22,7 @@ class Tasks{
 let form = document.getElementById('Form');
 form.addEventListener('submit', validationForm)
 
-const showTasksData = () => {
-    let data = new FormData(form);
-
-    name = data.get('name');
-    description = data.get('description');
-
+const showTasksData = (name, description) => {
     const tasks = new Tasks(name, description);
     tasks.showTask();
     messageSaveTasks();

@@ -9,6 +9,6 @@ const validationForm = e => {
     if(/^\s*$/.test(name) && /^\s*$/.test(description)){
         messageError();
     }else{
-        showTasksData();
+        showTasksData(name, description);
     }
 }
