@@ -2,7 +2,7 @@ let message = document.getElementById('message');
 
 const messageSaveTasks = () => {
     message.innerHTML = `
-        <div class=" bg-success p-2">
+        <div class=" bg-success p-2 mt-2">
             <p class="text-light">save successfully</p>
         </div>
     `
@@ -11,7 +11,7 @@ const messageSaveTasks = () => {
 
 const messageDeleteTask = () =>{
     message.innerHTML = `
-        <div class="bg-danger p-2">
+        <div class="bg-danger p-2 mt-2">
             <p class="text-light">Delete successfully</p>
         </div>
     `
@@ -20,7 +20,7 @@ const messageDeleteTask = () =>{
 
 const messageError = () => {
     message.innerHTML = `
-    <div class="bg-warning p-2">
+    <div class="bg-warning p-2 mt-2">
         <p class="text-dark">complete all fields</p>
     </div>
     `

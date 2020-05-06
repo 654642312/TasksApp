@@ -6,11 +6,13 @@ class Tasks{
     showTask(){
         let task = document.getElementById('Tasks')
         task.innerHTML += `
-        <div class="card p-5 mt-3">
-            <p> Task: ${this.name}</p>
-            <p> Description: ${this.description}</p>
-            <button class="btn btn-danger">Delete</button>
-        </div>`
+        <div class="card mb-3">
+            <div  class="card-body">
+                <p> Task: ${this.name}</p>
+                <p> Description: ${this.description}</p>
+                <button class="btn btn-danger">Delete</button>
+            </div>
+       </div>`
         count++;
         bannerTasks();
         resetForm();
