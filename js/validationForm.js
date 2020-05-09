@@ -7,8 +7,8 @@ const validationForm = e => {
     description = data.get('description');
 
     if(/^\s*$/.test(name) && /^\s*$/.test(description)){
-        messageError();
-    }else{
+        messageError('Complete all fields');
+    }else if(validationTask(name)){
         showTasksData(name, description);
     }
 }

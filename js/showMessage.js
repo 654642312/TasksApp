@@ -18,10 +18,10 @@ const messageDeleteTask = () =>{
     setTimeout(() => {message.innerHTML = ' '}, 1500);
 }
 
-const messageError = () => {
+const messageError = e => {
     message.innerHTML = `
     <div class="bg-warning p-2 mt-2">
-        <p class="text-dark">complete all fields</p>
+        <p class="text-dark">${e}</p>
     </div>
     `
     setTimeout(() => {message.innerHTML = ' '}, 1500);
