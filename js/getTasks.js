@@ -25,5 +25,5 @@ form.addEventListener('submit', validationForm)
 const showTasksData = (name, description) => {
     const tasks = new Tasks(name, description);
     tasks.showTask();
-    messageSaveTasks();
+    alertMessage('bg-success', 'Save Tasks succesfully');
 }

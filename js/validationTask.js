@@ -2,18 +2,19 @@ let tasks = [];
 const validationTask = task => {
     if(tasks == ''){
        tasks.push(task);
+       return true;
     }else{
         for(i in tasks){
-            if(tasks[i] === task){
-                messageError('this task already exists');
+            if(tasks[i] == task){
+                alertMessage('bg-warning','this task already exists');
                 return false;
             }
             else{
                 storageTask(task);
+                return true;
             }
         }
     }
-    return true;
 }
 const storageTask = task =>{
     tasks.push(task);
